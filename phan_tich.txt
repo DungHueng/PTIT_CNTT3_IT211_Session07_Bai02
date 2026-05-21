@@ -1,0 +1,6 @@
+Phân tích lỗi
+
+Trong AOP, `@Before Advice` sẽ được chạy trước phương thức gốc.
+Tuy nhiên, việc chỉ dùng `System.out.println()`
+ chỉ có tác dụng hiển thị thông báo ra màn hình console,
+ hoàn toàn không làm dừng luồng thực thi của chương trình.
