@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AspectSecurity {
 
-    private String currentUserRole = "VIP"; // giả lập user hiện tại
+    private String currentUserRole = "VIP";
 
     @Before("execution(* re.session_07bai02.Service.ProductService.add*(..))")
     public void verifyUser(JoinPoint joinPoint) {
